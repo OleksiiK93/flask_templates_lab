@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event planner</title>
+  </head>
+  <body>
+    <h1>Events</h1>
+    {% for event in events %}
+    <div>
+      <h2>{{event.name}}</h2>
+      <p>When: {{ event.date.strftime('%x') }}</p>
+      <p>Where: {{ event.location }}</p>
+      <p>Guests: {{event.number_of_guests }}</p>
+      <p>Description: <i>{{event.description}}</i></p>
+    </div>
+    {% endfor %}
+  </body>
+</html>
