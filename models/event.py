@@ -1,5 +1,3 @@
-import datetime
-
 class Event():
 
     def __init__(self, date, name, number_of_guests, location, description) -> None:

@@ -16,5 +16,19 @@
       <p>Description: <i>{{event.description}}</i></p>
     </div>
     {% endfor %}
+    <h2>New Event</h2>
+    <form action="/" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="date">Date:</label><br>
+      <input type="date" id="date" name="date"><br>
+      <label for="location">Place:</label><br>
+      <input type="text" id="location" name="location"><br>
+      <label for="guests">Guests:</label><br>
+      <input type="number" id="guests" name="guests" min="1"><br>
+      <label for="description">Description:</label><br>
+      <textarea id="description" name="description" cols="40"></textarea><br>
+      <input type="submit" value="Add an event">
+    </form>
   </body>
 </html>
